@@ -14,7 +14,7 @@ exports.post = (req, res, next) => {
     contract.hasMinLen(req.body.price, 1, "O pampo campo price é obrigatorio no minimo 1 item!")
     contract.hasMinLen(req.body.peso, 1, "O campo peso é obrigatorio no minimo 1 item!")
     contract.hasMinLen(req.body.image1, 1, "O pampo campo é obrigatorio no minimo 1 item!")
-    contract.hasMinLen(req.body.quantity, 1, "O pampo campo é obrigatorio no minimo 1 item!")
+    contract.hasMinLen(req.body.quantity, -1, "O pampo campo é obrigatorio no minimo 1 item!")
 
     if (!contract.isValid()) {
         res.status(400).send(contract.errors()).end();
