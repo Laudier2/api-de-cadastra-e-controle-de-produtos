@@ -14,6 +14,7 @@ depois npm init -y
 npm install
 
 ### Quinto passo
+Agora crie um arquivo .env na raiz do projeto e crie um variável de ambiente com esse nome GET_DB_MONGO=e aqui sua base de dados. Eu utilizei o mongoDB Atalás
 npm rum dev
 
 E acesse no navegador para conferir: http://localhost:3000/
